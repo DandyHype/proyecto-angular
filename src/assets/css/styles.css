@@ -1,0 +1,87 @@
+/* Importar Fuentes Custom */
+
+@font-face {
+    font-family: "yanone";
+    src: url("fonts/yanone.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "finger";
+    src: url("fonts/finger.ttf") format("truetype");
+}
+
+/* Estilos Generales */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "yanone";
+    font-size: 20px;
+    background: url("../img/pattern.png");
+    background-attachment: fixed;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/* Barra de Navegacion */
+
+header{
+    display: block;
+    width: 100%;
+    height: 90px;
+    background: rgba(53, 103, 164, 0.8);
+    position: fixed;
+    text-transform: uppercase;
+}
+
+header ul{
+    display: block;
+    width: 26%;
+    height: inherit;
+    margin: 0 auto;
+    margin-top: -3px;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 90px;
+}
+
+header ul li a{
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: inherit;
+    text-decoration: none;
+    color: white;
+    transition: all 300ms ease-in-out;
+}
+
+header a:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Logotipo */
+
+#logo{
+    font-family: "finger";
+    font-size: 30px;
+}
+
+#logo a{
+    transition: color 500ms , transform 500ms;
+}
+
+#logo a:hover{
+    background: transparent;
+    color: black;
+    transform: scale(1.5, 1.5);
+}

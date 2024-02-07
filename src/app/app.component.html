@@ -1,9 +1,18 @@
-<h1>Proyecto Angular</h1>
+<header>
+  <ul>
+    <li><a [routerLink]="['/sobre-mi']">Sobre Mi</a></li>
+    <li><a [routerLink]="['/proyectos']">Proyectos</a></li>
+    <li id="logo"><a href="#">VR</a></li>
+    <li><a [routerLink]="['/crear-proyecto']">Crear Proyecto</a></li>
+    <li><a [routerLink]="['/contacto']">Sobre Mi</a></li>
+  </ul>
+</header>
 
-<ul>
-  <li><a [routerLink]="['/sobre-mi']">Sobre Mi</a></li>
-  <li><a [routerLink]="['/proyectos']">Proyectos</a></li>
-  <li><a [routerLink]="['/crear-proyecto']">Crear Proyecto</a></li>
-  <li><a [routerLink]="['/contacto']">Sobre Mi</a></li>
-</ul>
-<router-outlet></router-outlet>
+<section id="content">
+  <router-outlet></router-outlet>
+</section>
+
+
+<footer>
+  Master en JavaScript de Victor Robles Web &copy;
+</footer>
